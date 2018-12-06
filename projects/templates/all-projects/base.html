@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title>Kernel Portfolio - {{title}} </title>
+        {% else %}
+        <title>Kernel Portfolio</title>
+        {% endif %}
+
+    </head>
+    <body>
+        {% block content %}h <h1>Projects for {{date|date: "l d-f-Y"}} </h1>{% endblock}
+
+    </body>
+</html>

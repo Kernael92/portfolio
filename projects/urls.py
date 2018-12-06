@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns=[
     url(r'^$',views.welcome,name = 'welcome'),
-    url(r'^today/$',views.projects_of_day,name='projectsToday')
+    url(r'^today/$',views.projects_today,name='projectsToday'),
+    url(r'^archives/(\d{4})-\d{2}-\d{2}/$',views.past_days_projects,name='pastProjects')
 
 ]

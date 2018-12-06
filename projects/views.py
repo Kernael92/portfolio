@@ -5,7 +5,7 @@ import datetime as dt
 
 # Create your views here.
 def welcome(request):
-    return HttpResponse('Welcome to the Kernel Portfolio')
+    return render(request,'welcome.html ')
 def projects_today(request):
     date = dt.date.today()
     return render(request,'all-projects/today-projects.html', {"date": date,})

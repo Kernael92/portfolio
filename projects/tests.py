@@ -15,6 +15,18 @@ class DeveloperTestClass(TestCase):
         self.kernaeljoy.save_developer()
         developers = Developer.objects.all()
         self.assertTrue(len(developers) > 0)
+class RepositoryTestClass(TestCase):
+    def setUp(self):
+        # creating a new developer and saving it
+        self.kernaeljoy = Developer(first_name = "Kernael", last_name = "Joy", userName = "kernaeljoy", email = "kerry@gmail.com")
+        self.kernaeljoy.save_developer()
+
+        self.new_repository = Reposirory(title = 'Highlight-news',description = 'A webpage to highligh different news articles and channels',developer = 'kernaeljoy')
+        self.new_repository.save()
+
+    def tearDown(self):
+        Developer.objects.all().delete()
+        Repository.objects.all().delete()
 
 
 

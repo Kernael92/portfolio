@@ -6,9 +6,12 @@ class Developer(models.Model):
     last_name = models.CharField(max_length =30)
     userName = models.CharField(max_length =30)
     email = models.EmailField()
+    phone_number = models.CharField(max_length = 10,blank = True)
 
     def __str__(self):
         return self.userName
+    def save_developer(self):
+        self.save()
 
 class Repository(models.Model):
     title = models.CharField(max_length =30)

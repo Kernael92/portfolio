@@ -132,6 +132,17 @@ ul li a:hover{
 }
 ul li:hover:nth-child(1) a{
     background: #3b5999;
+
+}
+ul li:hover:nth-child(2) a{
+    background: #070707;
+}
+
+ul li:hover:nth-child(2) a:before{
+    background: #070707;
+}
+ul li:hover:nth-child(2) a:after{
+    background: #070707;
 }
 /* The Overlay (background) */
 .overlay {

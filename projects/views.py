@@ -10,3 +10,6 @@ def index(request):
 def self(request):
     return render(request,'portfolio/self.html')
 
+def project(request):
+    return render(request,'portfolio/project.html')
+

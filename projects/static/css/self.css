@@ -1,0 +1,28 @@
+body {
+    background-image: url('../images/IMG_1185.jpg');
+    background-repeat: no-repeat,repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+h1 {
+    font-size:80px;
+    font-family: 'Buenard', serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin: 40px auto 0px;
+    text-shadow: 1px 1px 1px #000;
+    -webkit-text-shadow: 1px 1px 1px #000;
+    -moz-text-shadow: 1px 1px 1px #000;
+    color: #E4F1F6;
+    text-align: center;
+   
+}
+p {
+    font-size:30px;
+    font-family: 'Buenard', serif;
+    color: #67AFCB;
+  
+}

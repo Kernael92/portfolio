@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse" >
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a  class="navbar-brand" href="{% url 'projectsToday' %}">Portfolio</a>
-
-
-                </div>
-
+<!-- <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3" role="navigation" > -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="{%url 'index'%}">Home</a>
+                <a href="#">Portfolio history</a>
+                <a href="{%url 'self'%}">Who is Kernael</a>
+                <a href="#"></a>
             </div>
+            
+        </div>
+            
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()" style="position: fixed;">|||</span>
+        
 
-        </nav>
-    </body>
-
-
-</html>
+       
+<!-- </nav> -->

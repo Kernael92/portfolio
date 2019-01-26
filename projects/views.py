@@ -8,8 +8,8 @@ def index(request):
     return render(request,'index.html')
 
 def self(request):
-    return render(request,'portfolio/self.html')
+    return render(request,'self.html')
 
 def project(request):
-    return render(request,'portfolio/project.html')
+    return render(request,'project.html')
 

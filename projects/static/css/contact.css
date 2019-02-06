@@ -1,104 +1,4 @@
-/* The Overlay (background) */
-.overlay {
-    
-    height: 100%;
-    width: 0;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.9); 
-    overflow-x: hidden; 
-    transition: 0.5s; 
-  }
-  
-  
-  .overlay-content {
-    position: relative;
-    top: 25%; 
-    width: 100%; 
-    text-align: center; 
-    margin-top: 30px;
-  }
-  @media screen and (min-height: 500px) {
-    .overlay-content {
-      float: right;
-    }
-  }
-  
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block; 
-    transition: 0.3s; 
-  }
-  
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
-  body {
-    padding: 10px;
-    margin: 10px;
-    border: 10px;
-    background-image: url('../images/IMG_1185.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-
-
-  }
-  .type {
-    color:#fff; 
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #000;
-    -webkit-text-shadow: 1px 1px 1px #000;
-    -moz-text-shadow: 1px 1px 1px #000;
-
-  }
-  h1 {
-    font-size:100px;
-    font-family: 'Buenard', serif;
-    font-weight:bold;
-    text-transform: uppercase;
-    margin: 40px auto 0px;
-    text-shadow: 1px 1px 1px #000;
-    -webkit-text-shadow: 1px 1px 1px #000;
-    -moz-text-shadow: 1px 1px 1px #000;
-    text-align:center;
-    color:#fff;
-  }
-  p {
-    font-size:30px;
-    font-family: 'Buenard', serif;
-    text-align:center;
-    color:#fff;
-  }
-  ul{
+ul{
     position: absolute;
     transform: translate(-50%, -50%);
     margin: 0;
@@ -202,7 +102,88 @@ ul li:hover:nth-child(2) a:before{
 ul li:hover:nth-child(2) a:after{
   background:  rgb(0, 0, 0, 0.5);;
 }
-.contact {
-  width:100vw;
-  height:100vh;
+.column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
 }
+  
+.column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+        float: left;
+     
+    }
+    
+}
+.contact {
+    top:50%;
+
+}
+/* The Overlay (background) */
+.overlay {
+    
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  
+  
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px;
+  }
+  @media screen and (min-height: 500px) {
+    .overlay-content {
+      float: right;
+    }
+  }
+  
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+  }
+  
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+}
+  

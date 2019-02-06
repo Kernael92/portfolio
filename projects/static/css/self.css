@@ -62,9 +62,13 @@
     font-weight: 800;
     padding: 20px;
     text-transform: uppercase;
-    color: #202020;virt
+    color: #202020;
     display: inline-block;
     position: relative;
+    text-align: center;
+  }
+  .skills {
+    text-align: center;
   }
   
   .text {
@@ -155,4 +159,202 @@
       opacity: 1;
     }
   }
+  ul{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    left: 50%;
+   
+    
+}
+ul li{
+    list-style: none;
+    margin: 0 40px;
+
+}
+ul li .fa{
+    font-size: 40px;
+    color: #262626;
+    line-height: 80px;
+    transition: .5s;
+    
+}
+ul li a{
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+    transition: .5s;
+    box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+}
+ul li a::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transition: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+ul li a::after{
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: -11px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transition: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+ul li a:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+ul li:hover .fa{
+    color: #fff;
+}
+ul li a:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+ul li:hover:nth-child(1) a{
+  background: #3b5999;
+}
+
+ul li:hover:nth-child(1) a:before{
+  background: #2e4a86;
+}
+ul li:hover:nth-child(1) a:after{
+  background: #4a69ad;
+}
+ul li:hover:nth-child(2) a{
+  background: #55acee;
+}
+ul li:hover:nth-child(2) a:before{
+  background: #4184b7;
+}
+ul li:hover:nth-child(2) a:after{
+  background: #4d9fde;
+}
+ul li:hover:nth-child(1) a{
+  background: #3b5999;
+}
+
+ul li:hover:nth-child(1) a:before{
+  background: #2e4a86;
+}
+ul li:hover:nth-child(1) a:after{
+  background: #4a69ad;
+}
+ul li:hover:nth-child(2) a{
+  background:  rgb(0, 0, 0, 0.5);;
+}
+ul li:hover:nth-child(2) a:before{
+  background: rgb(0, 0, 0, 0.5);;
+}
+ul li:hover:nth-child(2) a:after{
+  background:  rgb(0, 0, 0, 0.5);;
+}
+.column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+}
+  
+.column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+        float: left;
+     
+    }
+    
+}
+
+/* The Overlay (background) */
+.overlay {
+    
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  
+  
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px;
+  }
+  @media screen and (min-height: 500px) {
+    .overlay-content {
+      float: right;
+    }
+  }
+  
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+  }
+  
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+}
+  
+h3 {
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+p {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
 

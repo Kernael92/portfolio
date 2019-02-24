@@ -98,7 +98,7 @@
     text-align:center;
     color:#fff;
   }
-  ul{
+  /* ul{
     position: absolute;
     transform: translate(-50%, -50%);
     margin: 0;
@@ -205,4 +205,18 @@ ul li:hover:nth-child(2) a:after{
 .contact {
   width:100vw;
   height:100vh;
+} */
+@media screen and (min-width: 450px) {
+  h1 {
+    font-size:50px;
+    font-family: 'Buenard', serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin: 20px auto 0px;
+    text-shadow: 1px 1px 1px #000;
+    -webkit-text-shadow: 1px 1px 1px #000;
+    -moz-text-shadow: 1px 1px 1px #000;
+    text-align:center;
+    color:#fff;
+  }
 }

@@ -62,13 +62,15 @@
     font-weight: 800;
     padding: 20px;
     text-transform: uppercase;
-    color: #202020;
+    color: #202020;  
     display: inline-block;
     position: relative;
     text-align: center;
   }
   .skills {
     text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   .text {
@@ -159,7 +161,7 @@
       opacity: 1;
     }
   }
-  ul{
+  /* ul{
     position: absolute;
     transform: translate(-50%, -50%);
     margin: 0;
@@ -262,7 +264,7 @@ ul li:hover:nth-child(2) a:before{
 }
 ul li:hover:nth-child(2) a:after{
   background:  rgb(0, 0, 0, 0.5);;
-}
+} */
 .column-66 {
     float: left;
     width: 66.66666%;
@@ -355,6 +357,6 @@ body {
 }
 p {
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 

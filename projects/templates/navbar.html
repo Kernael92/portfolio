@@ -1,21 +1,37 @@
-<!-- <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3 right" role="navigation" > -->
-        <div id="myNav" class="overlay" role="navigation">
-            <!-- Button to close the overlay navigation -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-transparent mb-3 right" role="navigation" >
+        <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">KERNAEL</a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="{%url 'index'%}">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{%url 'project'%}">PROJECTS</a></li>
+                        <li class="nav-item"><a class="nav-link"href="{%url 'self'%}">ABOUT</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        <!-- <div id="myNav" class="overlay" role="navigation">
+            
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             
-            <!-- Overlay content -->
+            
             <div class="overlay-content">
                 <a href="{%url 'index'%}">HOME</a>
                 <a href="{%url 'project'%}">PROJECTS</a>
                 <a href="{%url 'self'%}">WHO IS KERNAEL</a>
-                <a href="{%url 'contact'%}">CONTACT</a>
+        
             </div>
             
         </div>
             
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <span onclick="openNav()" style="position: fixed; font-size: 40px;">&#9776;</span>
         
+        <span onclick="openNav()" style="position: fixed; font-size: 40px;">&#9776;</span>
+         -->
 
        
-<!-- </nav> -->
+</nav>

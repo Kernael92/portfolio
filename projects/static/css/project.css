@@ -69,7 +69,7 @@ body {
 }
 .container .box {
     position:relative;
-    width:calc(400px - 60px);
+    width:calc(300px - 60px);
     height:calc(300px - 30px);
     background:#000;
     float:left;
@@ -170,3 +170,11 @@ h1{
     text-align:center;
     color:#fff;
 }
+body {
+    background-color: grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }

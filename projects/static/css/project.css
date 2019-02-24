@@ -69,14 +69,27 @@ body {
 }
 .container .box {
     position:relative;
-    width:calc(300px - 60px);
-    height:calc(300px - 30px);
+    width:calc(300px );
+    height:calc(300px);
     background:#000;
     float:left;
     margin:15px;
     box-sizing:border-box;
     overflow:hidden;
     box-shadow:0 5px 10px rgba(0,0,0,.8);
+}
+@media screen and (min-width: 768px) {
+    .container .box {
+        position:relative;
+        width:calc(300px - 60px);
+        height:calc(300px - 30px);
+        background:#000;
+        float:left;
+        margin:15px;
+        box-sizing:border-box;
+        overflow:hidden;
+        box-shadow:0 5px 10px rgba(0,0,0,.8);
+    }
 }
 .container .box:before {
     content:'';
@@ -159,11 +172,11 @@ body {
     transform:translateY(0px);
 }
 h1{
-    font-size:50px;
+    font-size:30px;
     font-family: 'Buenard', serif;
     font-weight:bold;
     text-transform: uppercase;
-    margin: 40px auto 0px;
+    margin: 20px auto 0px;
     text-shadow: 1px 1px 1px #000;
     -webkit-text-shadow: 1px 1px 1px #000;
     -moz-text-shadow: 1px 1px 1px #000;
@@ -177,4 +190,26 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
-  }
+}
+@media screen and (min-width: 768px) {
+    h1{
+        font-size:50px;
+        font-family: 'Buenard', serif;
+        font-weight:bold;
+        text-transform: uppercase;
+        margin: 40px auto 0px;
+        text-shadow: 1px 1px 1px #000;
+        -webkit-text-shadow: 1px 1px 1px #000;
+        -moz-text-shadow: 1px 1px 1px #000;
+        text-align:center;
+        color:#fff;
+    }
+}
+p {
+    font-size:20px; 
+}
+@media screen and (min-width: 768px) {
+    p {
+      font-size: 30px;
+    }
+}

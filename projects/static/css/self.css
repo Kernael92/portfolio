@@ -265,7 +265,7 @@ ul li:hover:nth-child(2) a:before{
 ul li:hover:nth-child(2) a:after{
   background:  rgb(0, 0, 0, 0.5);;
 } */
-.column-66 {
+/* .column-66 {
     float: left;
     width: 66.66666%;
     padding: 20px;
@@ -275,77 +275,25 @@ ul li:hover:nth-child(2) a:after{
     float: left;
     width: 33.33333%;
     padding: 20px;
-}
-@media screen and (max-width: 1000px) {
-    .column-66,
+} */
+@media screen and (min-width: 768px) {
     .column-33 {
         float: left;
+        padding: 20px;
+        width: 33.33333%;
      
     }
     
 }
-
-/* The Overlay (background) */
-.overlay {
-    
-    height: 100%;
-    width: 0;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.9); 
-    overflow-x: hidden; 
-    transition: 0.5s; 
+@media screen and (min-width: 768px) {
+  .column-66 {
+      float: left;
+      padding: 20px;
+      width: 66.66666%;
+   
   }
-  
-  
-  .overlay-content {
-    position: relative;
-    top: 25%; 
-    width: 100%; 
-    text-align: center; 
-    margin-top: 30px;
-  }
-  @media screen and (min-height: 500px) {
-    .overlay-content {
-      float: right;
-    }
-  }
-  
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block; 
-    transition: 0.3s; 
-  }
-  
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
 }
+
   
 h3 {
   font-size: 25px;
@@ -361,9 +309,6 @@ p {
 }
 
 body {
-  padding: 10px;
-  margin: 10px;
-  border: 10px;
   background-color: grey;
   background-position: center;
   background-repeat: no-repeat;

@@ -13,6 +13,16 @@
 
 
   }
+  @media screen and (min-width: 768px) {
+    body {
+    background-image: url('../images/IMG_1185.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    }
+  }
   .type {
     color:#fff; 
     text-decoration: none;

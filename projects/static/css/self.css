@@ -169,6 +169,8 @@
         float: left;
         padding: 20px;
         width: 33.33333%;
+        color: black;
+        
      
     }
     
@@ -186,13 +188,14 @@
 h3 {
   font-size: 25px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
  
 }
 
 p {
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  color: black;
 }
 
 body {

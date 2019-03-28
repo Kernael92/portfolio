@@ -1,36 +1,12 @@
 
-.column-33 {
-  float: left;
-  padding: 20px;
-  width: 33.33333%;
-  color:#FFF;
-
-}
-.column-66 {
-  float: left;
-  padding: 20px;
-  width: 66.66666%;
-  color:#FFF;
-}
-@media screen and (min-width: 768px) {
-  .column-33 {
-      float: left;
-      padding: 20px;
-      width: 33.33333%;
-      color:#FFF;
-   
-  }
-  
-}
-@media screen and (min-width: 768px) {
-.column-66 {
-    float: left;
-    padding: 20px;
-    width: 66.66666%;
-    color:#FFF;
- 
-}
-}
+.main-heading{width:100%; text-align:center; color:red; margin:60px;}
+.img-box img{width:100%;}
+.main{display:block; overflow:hidden;}
+.text-block{display:block; color:#fff;}
+.text-block h2{color:#fff;}
+.main{padding:100px 0; width:100%; overflow:hidden;}
+.main.bg-t{width:100%; background:rgba(255, 255, 255, 0.2); padding:120px 0;}
+body{background:url(https://www.adsyndicate.in/wp-content/uploads/2018/02/LP-bg-1.jpg);}
 p {
   font-size:22px; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -85,21 +61,10 @@ p {
 .fa{
      color:#4183D7;
 }
-body {
-  background-image: url("../images/model.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  fill-opacity: 1;
-  width: 100vw;
-  height: 100vh;
-  /* margin:0;
-  padding:0;
-  overflow:hidden; */
-}
+
 @media screen and (min-width: 768px) {
-  h1{
-      font-size:50px;
+  h2{
+      font-size:60px;
       font-family: 'Buenard', serif;
       font-weight:bold;
       text-transform: uppercase;
@@ -109,10 +74,11 @@ body {
       -moz-text-shadow: 1px 1px 1px #000;
       text-align:center;
       color:#fff;
+      
   }
 }
-h1{
-  font-size:40px;
+h2{
+  font-size:30px;
   font-family: 'Buenard', serif;
   font-weight:bold;
   text-transform: uppercase;
@@ -123,91 +89,6 @@ h1{
   text-align:center;
   color:#fff;
 }
-.wrapper {
-  height:100vh;
-  -webkit-animation: slide 60s linear infinite;
-  background:url(http://www.ox.ac.uk/sites/files/oxford/styles/ow_medium_feature/public/field/field_image_main/Tarantula%20nebula.jpg?itok=xbyxz9lz) repeat;
-  background-position: center;
-  animation:animatebg 60s linear infinite;
-  background-size: cover;
-  width: 100vw;
-}
-.pulse {
-  position:absolute;
-  top:30%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  background:url(https://fallriverchapel.files.wordpress.com/2010/02/gda_world_map_small.jpg);
-  background-size:cover;
-  animation:animateEarth 12s linear infinite;
-  width:200px;
-  height:200px;
-  border-radius:50%;
-  box-shadow:inset 0 0 40px rgba(255,255,255,.5);
-}
-
-.pulse span {
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  display:block;
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  background:transpatent;
-  border:2px solid #fff;
-  box-sizing:border-box;
-  animation:animate 6s linear infinite;
-}
-
-.pulse span:nth-child(1) {
-  animation-delay:0s;
-}
-.pulse span:nth-child(2) {
-  animation-delay:-4s;
-}
-.pulse span:nth-child(3) {
-  animation-delay:4s;
-}
-
-@keyframes animate {
-  0% {
-      width:200px;
-      height:200px;
-      opacity:1;
-  }
-  50% {
-      opacity:1;
-  }
-  100% {
-      width:500px;
-      height:500px;
-      opacity:0;
-  }
- 
-}
-
-
-@keyframes animateEarth {
-  0% {
-      background-position:0 0;
-  }
-  100% {
-      background-position:768px 0;
-  }
-}
-
-@keyframes animatebg {
-  0% {
-      background-position:0 0;
-  }
-  100% {
-      background-position:768px 0;
-  }
-}
-
-
 
 
 

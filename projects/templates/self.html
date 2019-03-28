@@ -15,9 +15,10 @@
   {%endif%}
 
   {% block styles %}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <link rel="stylesheet" href="{%static 'css/self.css'%}">
   {% endblock %}
 
@@ -33,26 +34,72 @@
             <div class="has-animation animation-ltr" data-delay="10">
               <div class="col-lg-12">
                 <h1 class="bigger">Kernael Apuko</h1>
-
               </div>
               <div class="col-lg-12">
                 <img src="../static/images/IMG_2533.JPG" alt="" style="height:100%; width: 100%;">
-
-              
               </div>
               <div class="skills" style="text-align: center;">
                 <span>Athletic</span> .
                 <span>Mountaineering</span> .
                 <span>Fashion Enthusiast</span>
               </div>
-            </div>
-                
+            </div>  
+          </div>
+          <section class="main">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6"> 
+                    <div class="img-box wow bounceInUp center" data-wow-duration="2s" data-wow-delay="0s">
+                      <h3>ABOUT</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="text-block wow bounceInDown center" data-wow-duration="4s">
+                        <p>Hi there! I am Kernael Apuko, a Kenyan-based full stack developer. With a passion for design and programming. I take pride in building well-crafted digital experience.</p>
+                    </div>
+                  </div>
+                </div>   
+              </div>    
+          </section>
+          <section class="main">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">    
+                  <div class="text-block wow fadeInUp" data-wow-duration="2s">
+                    <h3>DEVELOPMENT</h3>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <div class="img-box  wow bounceInUp center" data-wow-duration="4s">
+                      <p>In 2018, I switched my main focus from Geospatial Engineering to Software Engineering. I underwent an intensive bootcamp training at Moringa School for a duration of Six months where I learned several programming languages and  built very amazing applications. I gained team work skills as the training was purely based on peer work and group work. It's through the experience that i felt confidence to start working as a Full Stack Developer.</p>
+                  </div>
+                </div>
               </div>
-              
-              <br>
-              <br>
-              
-              <div class="has-animation animation-rtl" data-delay="1000">
+            </div>
+          </section>
+          <section class="main bg-t">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4"> 
+                  <div class="img-box wow bounceInUp" data-wow-duration="4s" data-wow-delay="0s">
+                      <img src="../static/images/flask.png">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="img-box  wow bounceInLeft" data-wow-duration="6s">
+                     <img src="../static/images/django.png">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="img-box  wow bounceInRight" data-wow-duration="6s">
+                     <img src="../static/images/angular.png">
+                  </div>
+                </div>
+              </div>  
+          </div>   
+        </section>
+
+              <!-- <div class="has-animation animation-rtl" data-delay="1000">
                 <div class="text">
                   <div class="column-33">
                     <h3>ABOUT</h3>
@@ -90,7 +137,7 @@
               </div> 
             </div>
         </div>
-    </div>
+    </div> -->
      
 {%endblock%}
 
@@ -100,6 +147,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="{%static 'js/index.js'%}"></script>
 
   

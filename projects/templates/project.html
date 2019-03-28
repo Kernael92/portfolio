@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <link rel="stylesheet" href="{%static 'css/project.css'%}">
   {% endblock %}
 
@@ -27,76 +28,71 @@
     {%include 'navbar.html'%}
 
   {% block content %} 
+  <section class="main">
   <div class="container" >
     <div class="row">
         <div class="text">
             <div class="col-lg-12">
                 <h1 data-wow-duration="1s" class="wow fadeInUp">Development</h1>
-                <p>Programming can seem like an uncreative activity to some people but in reality it is quite the opposite. There are so many creative and different ways to deal with the same issues.</p>
+                <p data-wow-duration="1s" class="wow fadeInDown">Programming can seem like an uncreative activity to some people but in reality it is quite the opposite. There are so many creative and different ways to deal with the same issues.</p>
             </div>  
         </div>
-        <div class="projects wow fadeInUp" data-wow-duration="2s">
-          <h3>PROJECTS</h3>
-        <div class="box">
-            <div class="imgBox">
-                <img src="../static/images/awrds.jpeg">
-            </div>
-            <div class="content">
+      </div>
+    </div>
+      </section>
+      <section class="main bg-t">
+        <div class="container" >
+          <div class="row">
+            <div class="projects wow fadeInUp" data-wow-duration="2s">
+              <h3>PROJECTS</h3>
+            <div class="box">
+              <div class="imgBox wow bounceInUp" data-wow-duration="4s">
+                  <img src="../static/images/awrds.jpeg">
+              </div>
+              <div class="content">
                 <h2>Awards</h2>
                 <a href="https://kernelawards.herokuapp.com/">
                 <p>View project </p>
               </a>
+              </div>
             </div>
-        </div>
-        <div class="box">
-            <div class="imgBox">
-                <img src="../static/images/neigh.jpeg">
-            </div>
-            <div class="content">
+            <div class="box">
+              <div class="imgBox bounceInLeft" data-wow-duration="4s">
+                  <img src="../static/images/neigh.jpeg">
+              </div>
+                <div class="content">
                 <h2>Neighborhood</h2>
                 <a href="https://kernelhood.herokuapp.com/">
                 <p>View project </p>
               </a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBox">
+                </div>
+              </div>
+            <div class="box">
+              <div class="imgBox fadeInUp" data-wow-duration="6s">
                 <img src="../static/images/gala.jpeg">
-            </div>
-            <div class="content">
+              </div>
+              <div class="content">
                 <h2>Gallery</h2>
                 <a href="https://kernel-gallerry.herokuapp.com/">
-                <p>View project </p>
-              </a>
+                  <p>View project </p>
+                </a>
+              </div>
             </div>
-        </div>
-        <div class="box">
-            <div class="imgBox">
+            <div class="box">
+              <div class="imgBox bounceInRight" data-wow-duration="4s">
                 <img src="../static/images/newwws.jpeg">
-            </div>
-            <div class="content">
+              </div>
+              <div class="content">
                 <h2>News Highlight</h2>
                 <a href="https://highlight-news.herokuapp.com/">
                 <p>View project </p>
-              </a>
-            </div>
-        </div>
-        
-      </div>
-  </div>
-      <div class="row">
-          <div class="technology wow fadeInUp" data-wow-duration="4s">
-              <h3>TECHNOLOGY STACK</h3>
-              <div class="col-12">
-                  <img class="image" src="../static/images/css.png" width="100" />
-                  <img class="image" src="../static/images/html.png" width="100" />
-                  <img class="image" src="../static/images/flask.png" width="100" />
-                  <img class="image" src="../static/images/django.png" width="100" />
-                  <img class="image" src="../static/images/angular.png" width="100" />
+                </a>
               </div>
             </div>
           </div>
+         </div>
         </div>
+      </section>
   {%endblock%}
 
 

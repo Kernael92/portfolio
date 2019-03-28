@@ -1,18 +1,7 @@
 
 
-body {
-    margin:0;
-    padding:0;
-    font-family:sans-serif;
+body{background:url(https://www.adsyndicate.in/wp-content/uploads/2018/02/LP-bg-1.jpg);}
 
-    opacity: 1;
-}
-/* .container {
-    position:relative;
-    width:1200px;
-    height:600px;
-    
-} */
 .container .box {
     position:relative;
     width:calc(300px );
@@ -127,16 +116,9 @@ h1{
     -webkit-text-shadow: 1px 1px 1px #000;
     -moz-text-shadow: 1px 1px 1px #000;
     text-align:center;
-    color:#fff;
+    color:red;
 }
-body {
-    background-color: grey;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-}
+
 @media screen and (min-width: 768px) {
     h1{
         font-size:50px;
@@ -148,18 +130,20 @@ body {
         -webkit-text-shadow: 1px 1px 1px #000;
         -moz-text-shadow: 1px 1px 1px #000;
         text-align:center;
-        color:#fff;
+        color:red;
     }
 }
 p {
     font-size:20px; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
    
 }
 @media screen and (min-width: 768px) {
     p {
       font-size: 30px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: white;
       
     }
 }
@@ -173,7 +157,7 @@ h3 {
     -webkit-text-shadow: 1px 1px 1px #000;
     -moz-text-shadow: 1px 1px 1px #000;
     text-align:center;
-    color:#fff;
+    color:red;
 }
 @media screen and (min-width: 768px) {
     h3 {
@@ -186,7 +170,8 @@ h3 {
         -webkit-text-shadow: 1px 1px 1px #000;
         -moz-text-shadow: 1px 1px 1px #000;
         text-align:center;
-        color:#fff;
+        color:red
       
     }
 }
+.main.bg-t{width:100%; background:rgba(255, 255, 255, 0.2); padding:120px 0;}
